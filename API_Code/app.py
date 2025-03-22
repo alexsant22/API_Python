@@ -25,7 +25,7 @@ livros = [
 
 # Criar
 @api.route('/livros/criar', methods = ['POST']) # POST
-def cirar_livro():
+def criar_livro():
     novo_livro = request.get_json()
     livros.append(novo_livro)
     
